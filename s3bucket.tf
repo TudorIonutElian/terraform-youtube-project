@@ -3,4 +3,9 @@
 ********************************************************/
 resource "aws_s3_bucket" "first_bucket" {
   bucket = "terraform-youtube-project-12345678"
+
+  tags = {
+    Name        = "terraform"
+    Environment = "Dev"
+  }
 }
